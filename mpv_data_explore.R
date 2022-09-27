@@ -39,3 +39,5 @@ dat <- dat %>%
   mutate(majornews_flag = nyt_flag + washpo_flag + wsj_flag + ap_flag + msn_flag +
                                 cnn_flag + fox_flag + usatoday_flag + nypost_flag)
 
+# Writing cleaned data
+write_csv(dat, "mpv_cleaned.csv")
