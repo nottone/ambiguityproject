@@ -2,7 +2,7 @@ rm(list = ls())
 
 library(tidyverse)
 
-raw <- read_csv("Mapping Police Violence.csv")
+raw <- read_csv("data/raw/Mapping Police Violence.csv")
 
 # Looking at numbers
 raw %>%
@@ -40,4 +40,4 @@ dat <- dat %>%
                                 cnn_flag + fox_flag + usatoday_flag + nypost_flag)
 
 # Writing cleaned data
-write_csv(dat, "mpv_cleaned.csv")
+write_csv(dat, "data/output/mpv_cleaned.csv")
